@@ -10,8 +10,7 @@
 
 ## **About me** ##
 
-The way I see it, it is good to be aware of new technologies taken place. I want to become a good Frontend developer making nice cross-browser interfaces, finding and correcting errors in the code, 
-and having better understanding of Java Script as a whole.
+The way I see it, it is good to be aware of new technologies taken place. I want to become a good Frontend developer making nice cross-browser interfaces, finding and correcting errors in the code, and having better understanding of Java Script as a whole.
 I am responsible, assiduous as well as detail-oriented and have the ability to learn something new at a quick pace.
 Software technology is very appealing to me and I want to acquire more skills by learning the unfamiliar libraries and frameworks of JS, 
 in particular, getting the profound experience of developing on React as well as using the proper code.
@@ -53,7 +52,7 @@ console.log(sum);
 
 ## **Work experience and courses** ##
 
-No working experience yet but is willing to. 
+No working experience yet but am willing to.
 Keep learning from the following courses:
 
 * A Complete Guide for Modern Web Development (HTML, CSS, JS)
