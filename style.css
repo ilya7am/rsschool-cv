@@ -1,0 +1,503 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+.wrapper {               
+    max-width: 1197px;                                    /* max - чтобы не было горизонт. scroll */
+    margin: 0 auto;   
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: #fff url(images/11.jpg); 
+    font: 1.2rem Arial; 
+    color:#555555; line-height:1.3;
+}  
+
+
+
+.burger-menu {
+    background-color: #FFFFE0;
+    padding-left: 20px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+
+
+
+
+
+
+
+.information {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 0.7;                              /* чтобы меню растягивалось*/
+  background-color: #FFFFE0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.2rem;
+  line-height: 1rem;
+  font-weight: 300;
+  padding: 15px 0 17px 0;
+  list-style: none;
+  padding-right: 30px;
+} 
+
+.information a { 
+    color: #000;
+    position: relative;          /* чтобы ссылка подчеркивалась при наведении */
+    padding: 1rem 0;
+}
+
+.information a:hover { 
+    color: #1E90FF	;
+}
+
+.information a::before {                 /* сама анимац. полоска */
+	position: absolute;
+	display: block;
+	content: "";
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 2px;
+	background-color: #008B8B;
+	transition: width 0.7s ease-out;
+	-webkit-transition: width 0.7s ease-out;
+	-moz-transition: width 0.7s ease-out;
+	-ms-transition: width 0.7s ease-out;
+	-o-transition: width 0.7s ease-out;
+}
+
+.information a:hover::before {           /* чтобы ссылка подчеркивалась до конца */
+	width: 100%;
+
+}
+
+.left_column {
+    margin: 20px;
+}
+
+.contacts {
+    margin-top: 30px;
+    font-size: 1.6rem;
+    list-style-type: none;
+    border: 5px dotted #8B0000;
+}
+
+.right_column {
+    padding: 25px 25px 0 25px;
+}
+
+.name {
+    color:#FF7F50;
+    text-align: center;
+}
+.job {
+    color:#FFA07A;
+    margin-top: 10px; 
+    text-align: center;
+}
+
+.about_me {
+    margin: 20px;
+}
+
+.icons {
+    padding-right: 10px;
+    display: inline-block;
+}
+
+.right_column p {     
+    margin-bottom: 35px;
+}
+
+
+
+
+.photo {
+    width: 90%;
+    border-radius: 21%;
+    box-shadow: 12px 16px 17px 0px rgb(15 82 82 / 25%)
+}
+
+.contacts a {
+    text-decoration: underline;
+    color: #000;
+}
+
+
+
+.svg-object:hover {
+    filter: invert(40%) sepia(91%) saturate(1321%) hue-rotate(191deg) brightness(99%) contrast(104%);
+    transition: all 0.2s ease-out;
+}
+
+
+.contacts li:last-child {
+    padding-bottom: 5px;
+}
+
+
+a {
+    color: #7B68EE;
+    text-decoration:none;
+}
+
+a:hover {
+	color: #8B0000;
+}
+
+
+.contacts object {
+    padding: 3px;
+}
+
+.initial_info {
+    display: flex;
+    background-color: #FFFFE0;
+}
+
+h3 {
+    color:#008B8B;
+    text-align: center;
+    margin: 10px;
+}
+
+
+.main_content {
+    background-color: #FAEBD7;
+    border: 4px solid #7B68EE;
+}
+
+
+.first-row, .last-row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+
+.first-row >* {   
+    flex-basis: 30%;                             
+}
+
+
+.work_courses p {
+    margin-bottom: 15px;
+}
+
+
+.skills {
+    margin: 30px 30px 0 30px;
+}
+
+.skills-list {
+    text-align: center;
+    list-style: none;
+}
+.skills-list >* {
+    padding-bottom: 10px;
+}
+
+
+.some-projects {                 /* Проект */
+    display: flex;
+    justify-content: center;
+}
+
+.project_link { 
+    margin-top: 10px;                          
+    text-decoration: none;
+    position: relative;
+    height: 370px;
+    color: #FAEBD7;
+    flex-grow: 0.1;
+} 
+
+.project_link:hover {                           
+    color: #FAEBD7;
+}  
+
+.project_content {
+    font-size: 1.5rem;
+    position: absolute;
+    max-width: 55%;
+    top: 110px;
+    left: 30px;
+    background-color: #800000;
+    padding: 10px;
+}
+
+.project_name {
+    padding-bottom: 10px;
+    color:#87CEFA;
+}
+
+.go_button {
+    width: 100px;
+    font-size: 1.3rem;
+    padding: 7px 20px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    text-align: center;
+    background: #FFA07A;
+    text-decoration: none;
+}
+
+.go_button:hover {
+    background: #008B8B;
+}
+
+
+
+.code_example h3{
+    text-align: center;
+}
+
+.code_example {
+    background-color: #D3D3D3;
+    width: 400px;
+    margin: 20px 0 0 20px;
+}
+
+.work_courses {
+    margin: 30px 30px 0 30px;
+}
+
+.English {
+    width: 520px;
+    margin: 25px 10px 0 20px;
+    text-align: center;
+}
+
+.English p {
+    margin-bottom: 15px;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFE0;
+    height: 68px;
+}
+
+.avatar_git {
+    margin-top: 10px;
+}
+
+.github {
+    color: #000;
+}
+
+.avatar_git:hover {
+    cursor: pointer;
+    filter: invert(57%) sepia(83%) saturate(4156%) hue-rotate(253deg) brightness(88%) contrast(87%);
+    transition: all 0.3s ease-out;
+}
+
+
+.y2021 {
+    margin: 35px 30px;
+}
+
+
+
+@media (max-width: 768px){
+    .contacts {
+    width: 220px;
+    }
+    .work_courses {
+        flex-grow: 1;
+    }
+    .first-row {
+        padding: 0;
+    }
+    .some-projects {
+        flex-flow: column;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 414px) {
+    .initial_info {
+        flex-direction: column;
+    }
+    .left_column {
+        display: flex;
+        margin: 5px;
+        align-items: flex-end;
+    }
+    .photo {
+        width: 35%;
+        height: 40%;
+    }
+    .contacts {
+        margin-left: 10px;
+        font-size: 1.4rem;
+    }
+    .right_column { 
+        padding: 0;
+    }
+    .first-row, .last-row {
+        flex-direction: column;
+    }
+    .work_courses, .skills {
+        margin: 10px 30px 0 25px;
+    }
+    .project_link {
+    height: 280px;
+    }
+    .project_poster {
+        width: 300px;
+    }
+    .project_content {
+        font-size: 1rem;
+        max-width: 65%;
+    }
+    .last-row {
+        justify-content: center;
+    }
+    .code_example {
+        width: auto;
+        margin: 24px 24px 0px 16px;
+    }
+    .English {
+        width: auto;
+    }
+}
+
+@media (max-width: 320px){
+    .contacts {
+        font-size: 1.25rem;
+    }
+    .name {
+        font-size: 3rem;
+    }
+    .job {
+        font-size: 2rem;
+    }
+    .project_poster {
+        width: 230px;
+    }
+    .project_content {
+        top: 29px;
+        left: 52px;
+        max-width: 50%;
+    }
+    .project_link {
+        height: 210px;
+    }
+    .y2021 {
+        margin: 30px 10px;
+    }
+}
+
+
+
+#button_menu {
+    opacity: 0;
+}
+
+
+
+@media (max-width: 768px) {
+    .menu__btn {
+        display: flex;
+        position: relative;
+        left: 20px;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    
+    .menu__btn > span, .menu__btn > span::before, .menu__btn > span::after {            /* значок бургера */
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background-color: #000;
+      cursor: pointer;
+      transition-duration: .25s;
+    }
+    
+    .menu__btn > span::before {
+        content: '';
+        top: -8px;
+    }
+    
+    .menu__btn > span::after {
+        content: '';
+        top: 8px;
+    }
+    
+    
+    .information {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        height: 100%;
+        margin: 0;
+        padding: 50px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #ECEFF1;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+      }
+    
+      .information a {
+        display: block;
+        padding: 12px 24px;
+        color: #333;
+        font-family: 'Roboto', sans-serif;
+        font-size: 2rem;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .information a:hover {
+        background-color: #CFD8DC;
+      }
+    
+    
+    #button_menu:checked ~ .menu__btn > span {
+      transform: rotate(45deg);
+    }
+    #button_menu:checked ~ .menu__btn > span::before {
+      top: 0;
+      transform: rotate(0);
+    }
+    #button_menu:checked ~ .menu__btn > span::after {
+      top: 0;
+      transform: rotate(90deg);
+    }
+    #button_menu:checked ~ .information {
+      visibility: visible;
+      left: 0;
+    }   
+}
+
+@media (max-width: 414px) {
+.information {
+    height: 25%;
+    }
+}
+
+@media (max-width: 320px) {
+    .information {
+        height: 30%;
+    }
+}
