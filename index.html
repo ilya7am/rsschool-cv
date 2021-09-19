@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilya Samoylov: CV</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="images/svg/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300:400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div class="wrapper">
+  <header>
+    <nav class="burger-menu">
+            <input id="button_menu" type="checkbox" />
+            <label class="menu__btn" for="button_menu">
+              <span></span>
+            </label>
+            
+            <ul class="information">
+                    <li><a href="#about_me">About me</a></li> 
+                    <li><a href="#work_courses">Work courses</a></li>	
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#code_example">Code example</a></li>
+                    <li><a href="#English">English</a></li>
+            </ul> 
+    </nav>
+</header>
+
+<main>
+      <div class="initial_info">
+            <aside class="left_column">
+            <img class="photo" src="images/myPhoto.jpg" alt="My photo" />
+            <ul class="contacts">
+                <div class="svg-object"><li><object type="image/svg+xml" data="images/svg/phone.svg" width ="30px"></object>+7 (917) 201-47-69</li></div>
+                <div class="svg-object"><li><object type="image/svg+xml" data="images/svg/email.svg" width ="30px"></object><a href="mailto:samojlov.ilya.97@mail.ru">samojlov.ilya.97@mail.ru</a></li></div>
+               <div class="svg-object"><li><object type="image/svg+xml" data="images/svg/telegram.svg" width ="30px"></object><a href="https://t.me/ilya7am">@ilya7am</a></li></div>
+            </ul>
+            </aside>
+
+            <div class="right_column">
+                <h1 class="name">Ilya Samoylov</h1>
+                <h2 class="job">Junior Frontend Developer</h2> 
+
+                <section class="about_me" id="about_me"> 
+                    <h3><img class ="icons" src="images/svg/about_me.svg" alt="About_me" width ="25px">About me</h3>
+                    <p>The way I see it, it is good to be aware of new technologies taken place. I want to become a good Frontend developer making nice cross-browser interfaces, finding and correcting errors in the code, 
+                    and having better understanding of Java Script as a whole.</p>
+                    <p>I am responsible, assiduous as well as detail-oriented and have the ability to learn something new at a quick pace.
+                    Software technology is very appealing to me and I want to acquire more skills by learning the unfamiliar libraries and frameworks of JS, 
+                    in particular, getting the profound experience of developing on React as well as using the proper code.</p>
+                </section>
+            </div>
+        </div>
+
+
+    
+        <div class="main_content">
+            <div class = "first-row">
+            <section class="work_courses" id="work_courses">
+                <h3><img class ="icons" src="images/svg/courses.svg" alt="Courses" width ="25px">Work experience and courses</h3>
+                <p>No working experience yet but am willing to.</p>
+                <p>Keep learning from the following courses:</p>
+                <ol class="courses">
+                    <li>A Complete Guide for Modern Web Development (HTML, CSS, JS)</li>
+                    <li>The Rolling Scopes School, Сourse "JS/FE Pre-School", Jul 2021 (in progress)</li>
+                    <li><a href="https://ru.code-basics.com/">Code Basics</a> </li>
+                    <li><a href="https://javascript.info/">JavaScript Tutorial</a> (in progress)</li>
+                    <li>Codewars</li>
+                </ol>
+            </section>
+
+
+
+            <section class="skills" id="skills">
+                <h3><img class ="icons" src="images/svg/skills.svg" alt="Skills" width ="25px">Skills</h3>
+                <ul class="skills-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>VS Code</li>
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe Dreamweaver CC</li>
+                </ul>
+            </section>
+        </div>
+
+        <section class="project_example" id="project">
+            <h3><img class ="icons" src="images/svg/project.svg" alt="My_project" width ="25px">Project example</h3>
+            <div class="some-projects">
+            <a class="project_link first-project" href="https://ilya7am.github.io/my-projects/contacts" target="_blank">
+                <img class="project_poster" src="images/poster1.png" alt="Project_poster" width="400px">
+                 <div class="project_content">
+                    <p>HTML, SCC</p>
+                    <h2 class="project_name">Contact page</h2>
+                    <p>My first project made mostly in HTML and modified afterwards.</p>
+                    <button class="go_button">Go</button>
+                 </div>
+            </a>
+
+
+                <a class="project_link" href="https://ilya7am.github.io/my-projects/dentist" target="_blank">
+                    <img class="project_poster" src="images/poster2.png" alt="Project_poster" width="400px">
+                    <div class="project_content">
+                        <p>HTML, SCC+SASS</p>
+                        <h2 class="project_name">Dental Clinic</h2>
+                        <p>An adaptive webpage with some features and welcomimg design.</p>
+                        <button class="go_button">Go</button>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+
+
+        <div class = "last-row">
+            <section class="code_example" id ="code_example"> 
+                <h3><img class ="icons" src="images/svg/coding.svg" alt="Code" width ="25px">Code example</h3>
+                <pre><code> function getSumm() {
+let one, two;
+function getone() {
+one = 1;
+}
+function gettwo() {
+two = 2;
+}
+getone();
+gettwo();
+
+let sum = one + two;
+console.log(sum);
+} </code> </pre>
+            </section> 
+            
+            <section class="English" id ='English'>
+                <h3><img class ="icons" src="images/svg/english.svg" alt="English" width ="25px">English level</h3>
+                <h4><b>C1</b></h4>
+                <p>Have the degree of interpreter.</p>
+                <p>I have been working as an English tutor for 6 years.</p>
+                <p>Studied at Plymouth Language School (February-March, 2020).</p>
+                <p>Fond of acquiring new skills by learning English in every way possible.</p>
+            </section>
+        </div>
+
+</main>
+
+
+    <footer>
+        <div class="footer_content">
+            <div class="avatar_git">
+                <a class ="github" href="https://github.com/ilya7am"><img src="images/gitHub.jpg" alt="gitHub avatar">My GitHub</a>
+            </div>
+        <p class="y2021">© 2021</p>
+        <a class ="RS_logo" href="https://rs.school/js/">
+         <img class="RS_logo" width="75" height="75" src="images/svg/rs_logo.svg" alt="RS_logo" />
+        </a>
+
+            
+
+
+
+        </div>
+    </footer>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
