@@ -152,7 +152,7 @@ a {
     text-decoration:none;
 }
 
-a:hover {
+.work_example:hover {
 	color: #8B0000;
 }
 
@@ -242,7 +242,11 @@ h3 {
     color:#87CEFA;
 }
 
-.go_button {
+.project_description {
+    padding-bottom: 20px;
+}
+
+.go_btn {
     width: 100px;
     font-size: 1.3rem;
     padding: 7px 20px;
@@ -255,7 +259,7 @@ h3 {
     text-decoration: none;
 }
 
-.go_button:hover {
+.go_btn:hover {
     background: #008B8B;
 }
 
